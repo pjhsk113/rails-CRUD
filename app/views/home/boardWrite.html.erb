@@ -1,0 +1,36 @@
+<form class="boardWrite" action="/WriteOk" method="get">
+	<table align="center" id="factory_table">
+		<tr>
+			<td align="right">
+				<input type="submit" value="작성">
+			</td>
+		</tr>
+		<tr class="clone_table" id="table_index">
+			<td>
+				<table border ="1" id="index_table">
+					<tr>
+						<td width="120" align="center">
+						Title
+						</td>
+						<td width="400">
+						<input name="title" type="text" size="50"> 
+						</td>
+					</tr>
+					<tr>
+						<td height="300" align="center">
+						Comment
+						</td>
+						<td valign="top">
+						<textarea name="content"  rows="20" cols="55"></textarea>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="add_table">
+			<td align="right">
+				<a href="/boardList">List</a>
+			</td>
+		</tr>
+	</table>
+</form>	

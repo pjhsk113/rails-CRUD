@@ -1,0 +1,9 @@
+<% @board.each do |board| %>
+제목: <%=board.title%><br>
+내용: <%=board.content%><br>
+<a href="/boardEdit/<%=board.id%>">수정하기</a>
+<a href="/boardDelete/<%=board.id%>">삭제하기</a><hr/>
+<%end%>
+
+	<a href="/boardWrite">글쓰러가기</a>
+
