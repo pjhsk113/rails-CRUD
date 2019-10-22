@@ -77,3 +77,9 @@ get '/boardDelete/:board_id', to: 'home#boardDelete'
 ```ruby
 <%=@board.content%>
 ```
+
+### scaffolding을 사용하면 CRUD를 간단하게 사용할 수있다.
+```ruby
+rails g scaffold board title:string content:string
+```
+- 위 명령어를 입력 후 migration 해주면 Model, View, Controller 등 웹사이트 구축에 필요한 CRUD의 모든 구성요소를 알아서 만들어 줌
